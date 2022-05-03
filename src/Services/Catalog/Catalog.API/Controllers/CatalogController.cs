@@ -11,8 +11,8 @@ namespace Catalog.API.Controllers
     public class CatalogController : ControllerBase
     {
         private readonly IProductRepository _productRepository;
-        private readonly ILogger _logger;
-        public CatalogController(IProductRepository productRepository, ILogger logger)
+        private readonly ILogger<CatalogController> _logger;
+        public CatalogController(IProductRepository productRepository, ILogger<CatalogController> logger)
         {
             _productRepository = productRepository;
             _logger = logger;
