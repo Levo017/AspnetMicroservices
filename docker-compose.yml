@@ -31,6 +31,9 @@ services:
       context: .
       dockerfile: src/Services/Discount/Discount.API/Dockerfile
 
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+  
   pgadmin:
     image: dpage/pgadmin4
 

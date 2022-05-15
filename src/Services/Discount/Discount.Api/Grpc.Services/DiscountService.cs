@@ -16,7 +16,7 @@ namespace Discount.API.Grpc.Services
         public DiscountService(IDiscountRepository repository, IMapper mapper, ILogger<DiscountService> logger)
         {
             _repository = repository;
-            _mapper = mapper;   
+            _mapper = mapper;
             _logger = logger;
         }
 
